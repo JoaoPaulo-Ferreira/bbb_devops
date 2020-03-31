@@ -21,8 +21,10 @@ us2 = ultrasound(ECHO_II, TRIGGER_II)
 
 
 while True:
-    print ("medida ultrasounI = %.2f" % us1.distance())
-    print ("medida ultrasounII = %.2f" % us2.distance())
+    distance = us1.distance()
+    print ("medida ultrasounI = %.2f" % distance())
+    distance = us2.distance()
+    print ("medida ultrasounII = %.2f" % distance())
 # GPIO.setup(TRIGGER_I, GPIO.OUT)
 # GPIO.setup(TRIGGER_II, GPIO.OUT)
 # GPIO.setup(ECHO_I, GPIO.IN)
