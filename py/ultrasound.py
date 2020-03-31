@@ -1,10 +1,10 @@
 import Adafruit_BBIO.GPIO as GPIO
 class ultrasound:
-  def __init__(self, TRIGGER, ECHO):
-    self.TRIGGER = TRIGGER
-    self.ECHO = ECHO
-    GPIO.setup(TRIGGER, GPIO.OUT)
-    GPIO.setup(ECHO, GPIO.IN)
+    def __init__(self, TRIGGER, ECHO):
+        self.TRIGGER = TRIGGER
+        self.ECHO = ECHO
+        GPIO.setup(TRIGGER, GPIO.OUT)
+        GPIO.setup(ECHO, GPIO.IN)
 
     def distance(self):
         GPIO.output(self.TRIGGER, GPIO.LOW)
