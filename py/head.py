@@ -1,7 +1,7 @@
 import time
 import Adafruit_BBIO.GPIO as GPIO
 import Adafruit_BBIO.PWM as PWM
-import ultrasound
+from ultrasound import *
 SERVO = "P8_13"
 TRIGGER_I = "P9_12"
 TRIGGER_II = "P9_16"
