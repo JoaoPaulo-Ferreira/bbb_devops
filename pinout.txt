@@ -1,0 +1,8 @@
+
+
+SERVO 		= "P8_13"
+TRIGGER_I 	= "P9_12"
+TRIGGER_II 	= "P9_16"
+ECHO_I 		= "P9_23"
+ECHO_II 	= "P9_14"
+
