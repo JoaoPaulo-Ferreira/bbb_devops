@@ -15,6 +15,8 @@ duty_span = duty_max - duty_min
 
 PWM.start(SERVO, (100-duty_min), 60.0, 1)
 
+us1 = ultrasound(ECHO_I, TRIGGER_I)
+
 # GPIO.setup(TRIGGER_I, GPIO.OUT)
 # GPIO.setup(TRIGGER_II, GPIO.OUT)
 # GPIO.setup(ECHO_I, GPIO.IN)
