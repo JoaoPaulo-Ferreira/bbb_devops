@@ -23,7 +23,6 @@ us2 = ultrasound(ECHO_II, TRIGGER_II)
 while True:
     distance = us1.distance()
     print ("medida ultrasounI = %.2f" % distance)
-    sleep(1)
     # print ("medida ultrasounI = %.2f" % distance())
     distance = us2.distance()
     print ("medida ultrasounII = %.2f" % distance)
