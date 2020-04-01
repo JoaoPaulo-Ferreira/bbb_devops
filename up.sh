@@ -2,4 +2,4 @@
 
 git add *
 git commit -m "up"
-yes | git push
+git push -o
