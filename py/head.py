@@ -13,7 +13,7 @@ duty_min = 3
 duty_max = 14.5
 duty_span = duty_max - duty_min
 
-PWM.start(SERVO, (100-duty_min), 60.0, 1)
+# PWM.start(SERVO, (100-duty_min), 60.0, 1)
 
 # us1 = ultrasound(ECHO_I, TRIGGER_I)
 us2 = ultrasound(ECHO_II, TRIGGER_II)
