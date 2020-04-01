@@ -15,16 +15,16 @@ duty_span = duty_max - duty_min
 
 PWM.start(SERVO, (100-duty_min), 60.0, 1)
 
-us1 = ultrasound(ECHO_I, TRIGGER_I)
+# us1 = ultrasound(ECHO_I, TRIGGER_I)
 us2 = ultrasound(ECHO_II, TRIGGER_II)
 
 
 
 while True:
-    distance = us1.distance()
-    print ("medida ultrasounI = %.2f" % distance)
-    # print ("medida ultrasounI = %.2f" % distance())
-    # distance = us2.distance()
+    # distance = us1.distance()
+    # print ("medida ultrasounI = %.2f" % distance)
+    distance = us2.distance()
+    print ("medida ultrasounI = %.2f" % distance())
     # print ("medida ultrasounII = %.2f" % distance)
 # GPIO.setup(TRIGGER_I, GPIO.OUT)
 # GPIO.setup(TRIGGER_II, GPIO.OUT)
