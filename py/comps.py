@@ -52,4 +52,4 @@ class servo:
             angle_f = float(angle)
             duty = 100 - ((angle_f / 180) * self.duty_span + self.duty_min)
             PWM.set_duty_cycle(self.pin, duty)
-            return None
+            return 0
