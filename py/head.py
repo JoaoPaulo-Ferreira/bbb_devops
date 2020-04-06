@@ -24,7 +24,7 @@ us2 = ultrasound(TRIGGER_II, ECHO_II)
 while True:
     dist = us1.distance()
     distII = us2.distance()
-    print ("%.1f  |  %.1f" % dist, distII)
+    print ("%.1f  |  %.1f" % dist % distII)
     # sleep(0.1)
 
     print ("    Measured Distance = %.1f cm" % dist)
