@@ -24,6 +24,7 @@ while True:
         print("distances = ", dist, " | ", distII, "     angle = ", angle)
         if(angle == 180):
             INCREASE_MODE = False
+            time.sleep(0.1)
             break
         angle = angle + 1
         motor.set_angle(angle)
@@ -36,6 +37,7 @@ while True:
         print("distances = ", dist, " | ", distII, "     angle = ", angle)
         if(angle == -1):
             INCREASE_MODE = True
+            time.sleep(0.1)
             break
         angle = angle - 1
         motor.set_angle(angle)
