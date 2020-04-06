@@ -1,7 +1,7 @@
 
 import Adafruit_BBIO.GPIO as GPIO
 import Adafruit_BBIO.PWM as PWM
-from ultrasound import ultrasound
+from comps import *
 import time
 SERVO = "P8_13"
 TRIGGER_I = "P9_12"
@@ -9,7 +9,7 @@ TRIGGER_II = "P9_16"
 ECHO_I = "P9_23"
 ECHO_II = "P9_14"
 
-
+#
 # duty_min = 3
 # duty_max = 14.5
 # duty_span = duty_max - duty_min
@@ -18,15 +18,17 @@ ECHO_II = "P9_14"
 
 us1 = ultrasound(TRIGGER_I, ECHO_I)
 us2 = ultrasound(TRIGGER_II, ECHO_II)
+motor = servo(SERVO)
 
-
-
+cont =0
 while True:
+    motor.set_angle(cont)
     dist = us1.distance()
     time.sleep(0.1)
     distII = us2.distance()
     time.sleep(0.1)
-    print(dist ," | ", distII)
+    print("distances = ", dist, " | ", distII, "     angle = ", cont)
+    cont = (cont + 1) % 180
 
 
     # print ("    Measured Distance = %.1f cm" % distII)

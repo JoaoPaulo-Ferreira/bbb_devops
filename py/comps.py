@@ -1,4 +1,5 @@
 import Adafruit_BBIO.GPIO as GPIO
+import Adafruit_BBIO.PWM as PWM
 import time
 class ultrasound:
     def __init__(self, TRIGGER, ECHO):
@@ -38,3 +39,16 @@ class ultrasound:
         #distance = ((TimeElapsed * 34300) / 2)
         distance = ((TimeElapsed * 34584) / 2)
         return distance
+
+class servo:
+    def __init__(self, pin = "P8_13"):
+        self.pin = pin
+        self.duty_min = 3
+        self.duty_max = 14.5
+        self.duty_span = self.duty_max - self.duty_min
+        PWM.start(pin, (100-self.duty_min), 60.0, 1)
+
+        def set_angle(self, angle):
+            angle_f = float(angle)
+            duty = 100 - ((angle_f / 180) * self.duty_span + self.duty_min)
+            PWM.set_duty_cycle(self.pin, duty)
