@@ -1,5 +1,5 @@
 import Adafruit_BBIO.GPIO as GPIO
-
+import time
 class ultrasound:
     def __init__(self, TRIGGER, ECHO):
         self.TRIGGER = TRIGGER
