@@ -21,7 +21,7 @@ while True:
         # time.sleep(0.1)
         distII = us2.distance()
         time.sleep(0.1)
-        print("distances = ", dist, " | ", distII, "     angle = ", cont)
+        print("distances = ", dist, " | ", distII, "     angle = ", angle)
         if(angle == 179):
             INCREASE_MODE = False
             break
@@ -32,7 +32,7 @@ while True:
         # time.sleep(0.1)
         distII = us2.distance()
         time.sleep(0.1)
-        print("distances = ", dist, " | ", distII, "     angle = ", cont)
+        print("distances = ", dist, " | ", distII, "     angle = ", angle)
         if(angle == 0):
             INCREASE_MODE = True
             break
