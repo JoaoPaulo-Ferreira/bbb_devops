@@ -26,7 +26,7 @@ while True:
     # time.sleep(0.1)
     distII = us2.distance()
     time.sleep(0.1)
-    print(dist ," | ", distII)
+    # print(dist ," | ", distII)
 
 
     print ("    Measured Distance = %.1f cm" % distII)
