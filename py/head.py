@@ -23,7 +23,7 @@ motor = servo(SERVO)
 cont = 0
 aux = 0
 while True:
-    aux = motor.set_angle(cont)
+    motor.set_angle(cont)
     dist = us1.distance()
     time.sleep(0.1)
     distII = us2.distance()
