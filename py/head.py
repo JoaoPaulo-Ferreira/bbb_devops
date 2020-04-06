@@ -26,6 +26,7 @@ while True:
             INCREASE_MODE = False
             break
         angle = angle + 1
+        motor.set_angle(angle)
 
     while(INCREASE_MODE == False):
         dist = us1.distance()
@@ -37,3 +38,4 @@ while True:
             INCREASE_MODE = True
             break
         angle = angle - 1
+        motor.set_angle(angle)
