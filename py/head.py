@@ -26,7 +26,7 @@ while True:
     print ("Measured Distance = %.1f cm" % dist)
     # sleep(0.1)
     dist = us2.distance()
-    print ("medida ultrasounI = %.2f" % dist)
+    print ("    Measured Distance = %.1f cm" % dist)
     # print ("medida ultrasounII = %.2f" % distance)
 # GPIO.setup(TRIGGER_I, GPIO.OUT)
 # GPIO.setup(TRIGGER_II, GPIO.OUT)
