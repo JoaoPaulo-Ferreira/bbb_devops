@@ -16,7 +16,7 @@ ECHO_II = "P9_14"
 
 # PWM.start(SERVO, (100-duty_min), 60.0, 1)
 
-us1 = ultrasound(ECHO_I, TRIGGER_I)
+us1 = ultrasound(TRIGGER_I, ECHO_I)
 # us2 = ultrasound(ECHO_II, TRIGGER_II)
 
 

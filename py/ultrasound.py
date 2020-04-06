@@ -8,8 +8,8 @@ class ultrasound:
         GPIO.setup(ECHO, GPIO.IN)
 
     def distance(self):
-        print(self.TRIGGER)
-        print(self.ECHO)
+        # print(self.TRIGGER)
+        # print(self.ECHO)
         GPIO.output(self.TRIGGER, GPIO.LOW)
         time.sleep(0.000005)
 
