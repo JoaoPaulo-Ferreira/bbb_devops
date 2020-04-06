@@ -16,15 +16,16 @@ ECHO_II = "P9_14"
 # PWM.start(SERVO, (100-duty_min), 60.0, 1)
 
 us1 = ultrasound(ECHO_I, TRIGGER_I)
-us2 = ultrasound(ECHO_II, TRIGGER_II)
+# us2 = ultrasound(ECHO_II, TRIGGER_II)
 
 
 
 while True:
-    distance = us1.distance()
-    print ("medida ultrasounI = %.2f" % distance)
-    distance = us2.distance()
-    print ("medida ultrasounI = %.2f" % distance())
+    dist = us1.distance()
+    print ("Measured Distance = %.1f cm" % dist)
+    sleep(0.1)
+    # distance = us2.distance()
+    # print ("medida ultrasounI = %.2f" % distance())
     # print ("medida ultrasounII = %.2f" % distance)
 # GPIO.setup(TRIGGER_I, GPIO.OUT)
 # GPIO.setup(TRIGGER_II, GPIO.OUT)
