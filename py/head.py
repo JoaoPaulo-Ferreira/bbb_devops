@@ -16,7 +16,7 @@ motor = servo(SERVO)
 angle = 0
 INCREASE_MODE = True
 while True:
-    while(INCREASE_MODE == True)
+    while(INCREASE_MODE == True):
         dist = us1.distance()
         # time.sleep(0.1)
         distII = us2.distance()
@@ -27,7 +27,7 @@ while True:
             break
         angle = angle + 1
 
-    while(INCREASE_MODE == False)
+    while(INCREASE_MODE == False):
         dist = us1.distance()
         # time.sleep(0.1)
         distII = us2.distance()
