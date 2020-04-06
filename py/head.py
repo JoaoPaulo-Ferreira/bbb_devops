@@ -20,7 +20,7 @@ us1 = ultrasound(TRIGGER_I, ECHO_I)
 us2 = ultrasound(TRIGGER_II, ECHO_II)
 motor = servo(SERVO)
 
-cont =0
+cont = 0
 while True:
     motor.set_angle(cont)
     dist = us1.distance()
