@@ -37,5 +37,5 @@ class ultrasound:
         TimeElapsed = StopTime - StartTime
         #distance = ((TimeElapsed * 34300) / 2)
         distance = ((TimeElapsed * 34584) / 2)
-        sleep(1)
+        sleep(0.1)
         return distance
