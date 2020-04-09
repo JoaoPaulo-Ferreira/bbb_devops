@@ -51,5 +51,10 @@ class servo:
 
     def set_angle(self, angle):
         angle_f = float(angle)
-        duty = 100 - ((angle_f / 179) * self.duty_span + self.duty_min)
+        duty = 100 - ((angle_f / 180) * self.duty_span + self.duty_min)
         PWM.set_duty_cycle(self.pin, duty)
+
+
+def WriteToFile(f, dist, dist2, angle):
+    f.write(dist,angle)
+    f.write(dist2,angle+180)
