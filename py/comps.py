@@ -56,5 +56,7 @@ class servo:
 
 
 def WriteToFile(f, dist, dist2, angle):
-    f.write(dist,angle)
-    f.write(dist2,angle+180)
+    buff = "%.2f,%d" % (dist, angle)
+    f.write(buff)
+    buff = "%.2f,%d" % (dist2, angle+180)
+    f.write(buff)
