@@ -34,9 +34,9 @@ while True:
         print("distances = ", dist, " | ", distII, "     angle = ", angle)
 
         #############################################################
-        WriteToFile(f, dist, distII, angle):
+        WriteToFile(f, dist, distII, angle)
         #############################################################
-        
+
         if(angle == 180):
             INCREASE_MODE = False
             time.sleep(0.1)
@@ -52,7 +52,7 @@ while True:
         print("distances = ", dist, " | ", distII, "     angle = ", angle)
 
         #############################################################
-        WriteToFile(f, dist, distII, angle):
+        WriteToFile(f, dist, distII, angle)
         #############################################################
 
         if(angle == -1):
