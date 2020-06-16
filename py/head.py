@@ -20,6 +20,7 @@ f = open("measurements.txt", "w")
 
 
 us1 = ultrasound(TRIGGER_I, ECHO_I)
+us1 = ultrasound(TRIGGER_I, ECHO_I)
 us2 = ultrasound(TRIGGER_II, ECHO_II)
 motor = servo(SERVO)
 
